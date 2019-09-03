@@ -54,6 +54,20 @@ public class SparkLearnController implements Runnable{
     @Autowired
     private CoGroup coGroup;
 
+    @Autowired
+    private Reduce reduce;
+
+
+
+    @RequestMapping("/reduce")
+    public String reduce(){
+        int num = this.reduce.reduce();
+        String str = "结果："+num;
+        System.out.println(str);
+        return str;
+    }
+
+
     @RequestMapping("/coGroup")
     public String coGroup(){
         List<Tuple2<String, Tuple2<Iterable<Integer>, Iterable<Integer>>>> list = this.coGroup.coGroup();
