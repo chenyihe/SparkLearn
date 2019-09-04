@@ -18,7 +18,7 @@ import java.util.List;
 /**
  * @author ：Cyril
  * @date ：Created in 2019/8/31 13:56
- * @description： MapPartitionsWithIndex算子：用法上和MapPartitions大同小异，只是加上一个INDEX值表示分区信息
+ * @description： MapPartitionsWithIndex算子：用法上和MapPartitions大同小异，只是加上一个INDEX值表示分区信息,将一个分区的所有元素进行同样的操作
  * @modified By：
  */
 
